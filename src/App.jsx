@@ -17,7 +17,7 @@ const setAuthToken =  (token) => {
 
 const App =()=> {
   const navigate =useNavigate()
-  const [authenticated,setAuthentication] = useState(false)
+  const [authenticated,setAuthentication]  = useState(false)
   const [user,setUser]= useState({})
 
   const getAuthenticated =(data)=>{

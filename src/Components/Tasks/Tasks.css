@@ -1,0 +1,130 @@
+.tasks-wrapper{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    height: 90vh;
+}
+
+.tasks-heading{
+    text-align: center;
+}
+
+.tasks-items{
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.task{
+    /* margin-bottom: 30px; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 15rem;
+    transition: all .2s;
+    border-radius: 15px;
+}
+
+.task:hover{
+    box-shadow: rgba(0, 0, 0, 0.76) 0px 10px 36px 0px, rgba(0, 0, 0, 0.16) 0px 0px 0px 1px;
+}
+
+.task-title{
+    background-color: #40A2D8;
+    color: white;
+    padding: 10px 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.task-description{
+    padding: 5px 15px;
+    background-color: rgba(64, 163, 216, 0.104);
+    box-sizing: border-box;
+    flex: 1;
+    text-wrap: wrap;
+}
+
+.task-due{
+    background-color: #40A2D8;
+    color: white;
+    padding: 15px 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.task-btn{
+    color: #40A2D8;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.task-btn:hover{
+    text-decoration: underline;
+}
+
+.task-delete{
+    height: 30px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+}
+
+.task-update{
+    right: 40px;
+    top: 5.5px;
+}
+
+.task-add{
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* position: absolute; */
+    /* bottom: 0%;
+    left: 0; */
+    width: 100%;
+    padding: 3px;
+    /* background-color: aqua; */
+    cursor: pointer;
+}
+
+.task-add img{
+    height: 3rem;
+    border-radius: 50%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    transition: all .3s;
+    margin-bottom: -.5rem;
+    
+}
+
+.task-add p{
+    text-transform: uppercase;
+    font-size: .8rem;
+
+}
+
+.task-add img:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .6);
+}
+
+.task-add img:active,.task-add img:focus{
+    transform: translateY(0px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0);
+}
+
+.task-form{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}

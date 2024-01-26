@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import { Routes, Route, useNavigate } from 'react-router'
-import Login from './Components/Login/login'
+import Login from './Components/Login/Login'
 import Register from "./Components/Register/Register"
 import Dashboard from './Components/Dashboard/Dashboard'
 import axios from 'axios'
